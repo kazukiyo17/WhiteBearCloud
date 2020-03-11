@@ -1,0 +1,55 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>SendEmailServlet</servlet-name>
+  	<display-name>SendEmailServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlet.SendEmailServlet</servlet-class>
+  </servlet>
+  
+  <!--   <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlet.RegisterServlet</servlet-class>
+  </servlet> -->
+
+  <servlet-mapping>
+  	<servlet-name>SendEmailServlet</servlet-name>
+  	<url-pattern>/SendEmailServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--   <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+ 	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping> -->
+
+	<servlet>
+		<servlet-name>ShareSaveServlet</servlet-name>
+		<display-name>ShareSaveServlet</display-name>
+		<description></description>
+		<servlet-class>servlet.ShareSaveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShareSaveServlet</servlet-name>
+		<url-pattern>/ShareSaveServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ShareDownServlet</servlet-name>
+		<display-name>ShareDownServlet</display-name>
+		<description></description>
+		<servlet-class>servlet.ShareDownServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShareDownServlet</servlet-name>
+		<url-pattern>/ShareDownServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
